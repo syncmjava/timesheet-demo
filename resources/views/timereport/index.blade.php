@@ -39,22 +39,22 @@ $(document).ready(function() {
     </ul>
     <br>
     <div class="btn-toolbar mb-2 mb-md-0">
-          <div>
-          <h4>◆<span style="font-weight:bold">稼働状況</span></h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </div> 
           <div class="btn-group mr-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <select class="custom-select d-block w-100" style="height:40px;color:red;font-weight:bold" id="selectYM" required>
-                <option style="color:black;font-weight:bold" value="">年月を選択する</option>
-                <option style="color:black;font-weight:bold" select value="201808">201808</option>
-                <option style="color:black;font-weight:bold" selected value="201807">201807</option>
-                <option style="color:black;font-weight:bold" select value="201806">201806</option>
-            </select>&nbsp;&nbsp;
-            <button class="btn btn-sm btn-outline-secondary" style="height:40px;">最新の情報に更新</button>
+            <label for="inputdate" class="d-block w-100">日付</label>
+            <input type="text" id="inputdate" class="custom-control d-block w-100">
+            &nbsp;&nbsp;&nbsp;&nbsp;<label for="inputname" class="d-block w-100">氏名</label>
+            <input type="text" id="inputname" class="custom-control d-block w-100">
+            &nbsp;&nbsp;&nbsp;&nbsp;<label for="inputid" class="d-block w-100">ID</label>
+            <input type="text" id="inputid" class="custom-control d-block w-100">
           </div> 
     </div>
+
+          <div class="btn-group mr-2">
+                <button class="btn btn-sm btn-outline-secondary">クリア</button>&nbsp;&nbsp;
+                <button class="btn btn-sm btn-outline-secondary">検索</button>
+          </div>
     <br>
     <div class="table-responsive">
-      <label>9件</label>
       <table id="example" class="display" width="100%">
         <thead>
           <tr><th style="background-color:#6666FF; color:#FFFFFF">日付</th>               

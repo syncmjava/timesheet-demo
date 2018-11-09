@@ -16,7 +16,7 @@ var dataSet = [
 
 
 $(document).ready(function() {
-    $('#example').DataTable( {
+    var tblDatas = $('#example').DataTable( {
       ordering: false,
       info: false,
       paging: false,
@@ -31,6 +31,34 @@ $(document).ready(function() {
             { data: "name" }           
         ]
     } );
+
+    
+    // tblDatas.on( 'draw', function () {
+    //   var recordsTotal = parseInt(tblDatas.page.info().recordsTotal);
+    //   if(recordsTotal > 1){
+    //     recordsTotal = recordsTotal-1;
+    //   }
+
+    //   $("#lblCnt").text(recordsTotal);
+    // } );
+
+    // $.fn.dataTable.ext.errMode = 'none';
+
+    // tblDatas.on( 'error.dt', function (e, settings, techNote, message) {
+    //    alert( 'エラーを発生しました' );
+    //    } );
+
+    // $("#selectYM").change(function(){
+    //     var chgUrl= "/api/v1/utilization/" +  $("#selectYM").val();
+    //     tblDatas.ajax.url(chgUrl).load();
+    // });
+
+    // $("#btnRefresh").click(function(){
+    //     $("#selectYM").val(curerentYm);
+    //     var chgUrl= "/api/v1/utilization/" +  curerentYm;
+    //     tblDatas.ajax.url(chgUrl).load();
+
+    // });
     
 } );
 </script>

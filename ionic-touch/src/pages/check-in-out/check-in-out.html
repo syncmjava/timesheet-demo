@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>出退勤選択画面</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<div class="row">
+  
+  <div class="col">
+    <div class="list-avatar-page">
+<div class="list-avatar-page">
+      <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/avatar-ts-woody.png">
+          </ion-avatar>
+          <p>10223456</p>
+          <h2>ドラ　太郎</h2>
+        </ion-item>
+
+      </ion-list>
+
+    </div>
+     <div class="col col-offset-10">
+        <button ion-button color="primary" [navPush]="checkResultPage" >出勤</button>
+        <button ion-button color="primary" [navPush]="checkResultPage" >退勤</button>
+    </div>
+
+    </div>
+  </div>
+</div>
+</ion-content>

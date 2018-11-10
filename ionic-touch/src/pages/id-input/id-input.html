@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>ID入力画面</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<div class="row">
+  <div class="col">
+    <div class="col col-offset-10">
+      <ion-item style="width: 200px">
+        <ion-input type="text" placeholder="IDを入力" ></ion-input>
+      </ion-item>
+    </div>
+    <div class="col col-offset-10">
+        <button ion-button color="primary" >１</button>
+        <button ion-button color="primary" >２</button>
+        <button ion-button color="primary" >３</button>
+    </div>
+    <div class="col col-offset-10">
+        <button ion-button color="primary" >４</button>
+        <button ion-button color="primary" >５</button>
+        <button ion-button color="primary" >６</button>
+    </div>
+    <div class="col col-offset-10">
+        <button ion-button color="primary" >７</button>
+        <button ion-button color="primary" >８</button>
+        <button ion-button color="primary" >９</button>
+    </div>
+    <div class="col col-offset-10">
+        <button ion-button color="primary" >削除</button>
+        <button ion-button color="primary" >０</button>
+        <button ion-button color="primary" [navPush]="checkInOutPage" >決定</button>
+    </div>
+  </div>
+  <div class="col">
+    <div class="list-avatar-page">
+      <ion-list>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/avatar-ts-woody.png">
+          </ion-avatar>
+          <p>10223456</p>
+          <h2>ドラ　太郎</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/avatar-ts-buzz.png">
+          </ion-avatar>
+          <p>20973323</p>
+          <h2>野比　大雄</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/avatar-ts-jessie.png">
+          </ion-avatar>
+           <p>23416678</p>
+           <h2>ドラミ</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="assets/img/avatar-ts-potatohead.png">
+          </ion-avatar>
+          <p>34212346</p>
+          <h2>刚田　武</h2>
+        </ion-item>
+
+      </ion-list>
+
+    </div>
+  </div>
+</div>
+</ion-content>

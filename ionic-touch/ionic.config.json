@@ -1,5 +1,7 @@
 {
   "name": "ionic-touch",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

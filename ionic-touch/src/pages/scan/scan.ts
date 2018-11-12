@@ -22,8 +22,9 @@ export class ScanPage {
   constructor(
     private navCtrl: NavController,
     private navParams: NavParams,
-    private qrScanner: QRScanner,
-    private viewCtrl: ViewController) {
+    private qrScanner: QRScanner) {
+    //   ,
+    // private viewCtrl: ViewController
       //默认为false
       this.light = false;
       this.frontCamera = false;

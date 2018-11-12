@@ -77,9 +77,9 @@ $(document).ready(function() {
           </div> 
     </div>
 
-          <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary">クリア</button>&nbsp;&nbsp;
-                <button class="btn btn-sm btn-outline-secondary">検索</button>
+          <div class="btn-group mr-2" style="float:right">
+                <button class="btn btn-sm btn-outline-secondary">クリア</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-sm btn-outline-secondary">検索</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
     <br>
     <div class="table-responsive">

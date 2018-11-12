@@ -6,8 +6,18 @@ import { CheckInOutPage } from '../check-in-out/check-in-out';
   templateUrl: 'id-input.html'
 })
 export class IdInputPage {
+  currentId: string = "";
+
   checkInOutPage;
   constructor() {
     this.checkInOutPage = CheckInOutPage;
+  }
+
+  doInput(n) {
+    this.currentId = this.currentId + n;
+  }
+
+  delete() {
+    this.currentId = "";
   }
 }

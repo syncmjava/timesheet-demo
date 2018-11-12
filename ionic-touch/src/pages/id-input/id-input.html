@@ -10,27 +10,27 @@
   <div class="col">
     <div class="col col-offset-10">
       <ion-item style="width: 200px">
-        <ion-input type="text" placeholder="IDを入力" ></ion-input>
+        <ion-input type="text" placeholder="IDを入力" [(ngModel)]="currentId" ></ion-input>
       </ion-item>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" >１</button>
-        <button ion-button color="primary" >２</button>
-        <button ion-button color="primary" >３</button>
+        <button ion-button color="primary" (click)="doInput('1')">１</button>
+        <button ion-button color="primary" (click)="doInput('2')">２</button>
+        <button ion-button color="primary" (click)="doInput('3')" >３</button>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" >４</button>
-        <button ion-button color="primary" >５</button>
-        <button ion-button color="primary" >６</button>
+        <button ion-button color="primary" (click)="doInput('4')" >４</button>
+        <button ion-button color="primary" (click)="doInput('5')" >５</button>
+        <button ion-button color="primary" (click)="doInput('6')" >６</button>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" >７</button>
-        <button ion-button color="primary" >８</button>
-        <button ion-button color="primary" >９</button>
+        <button ion-button color="primary" (click)="doInput('7')" >７</button>
+        <button ion-button color="primary" (click)="doInput('8')" >８</button>
+        <button ion-button color="primary" (click)="doInput('9')" >９</button>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" >削除</button>
-        <button ion-button color="primary" >０</button>
+        <button ion-button color="primary" (click)="delete()" >削除</button>
+        <button ion-button color="primary" (click)="doInput('0')" >０</button>
         <button ion-button color="primary" [navPush]="checkInOutPage" >決定</button>
     </div>
   </div>

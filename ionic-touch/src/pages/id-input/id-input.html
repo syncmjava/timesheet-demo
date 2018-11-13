@@ -6,67 +6,67 @@
 
 
 <ion-content padding>
-<div class="row">
-  <div class="col">
+<div class="row" style="margin-top:60px;">
+  <div class="col" style="margin-left:20px;">
     <div class="col col-offset-10">
       <ion-item style="width: 200px">
-        <ion-input type="text" placeholder="IDを入力" [(ngModel)]="currentId" ></ion-input>
+        <ion-input type="text" placeholder="IDを入力" [(ngModel)]="currentId" style="font-size:30px;" ></ion-input>
       </ion-item>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('1')" round large>１</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('2')" round large>２</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('3')" round large>３</button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('1')" round large><label style="font-size:40px;">１</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('2')" round large><label style="font-size:40px;">２</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('3')" round large><label style="font-size:40px;">３</label></button>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('4')" round large>４</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('5')" round large>５</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('6')" round large>６</button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('4')" round large><label style="font-size:40px;">４</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('5')" round large><label style="font-size:40px;">５</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('6')" round large><label style="font-size:40px;">６</label></button>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('7')" round large>７</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('8')" round large>８</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('9')" round large>９</button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('7')" round large><label style="font-size:40px;">７</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('8')" round large><label style="font-size:40px;">８</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('9')" round large><label style="font-size:40px;">９</label></button>
     </div>
     <div class="col col-offset-10">
-        <button ion-button color="primary" style="width:100px;" (click)="delete()" round large>削除</button>
-        <button ion-button color="primary" style="width:100px;" (click)="doInput('0')" round large>０</button>
-        <button ion-button color="primary" style="width:100px;" [navPush]="checkInOutPage" round large>決定</button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="delete()" round large><label style="font-size:40px;">削除</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('0')" round large><label style="font-size:40px;">０</label></button>
+        <button ion-button color="primary" style="width:120px;height:80px;" [navPush]="checkInOutPage" round large><label style="font-size:40px;">決定</label></button>
     </div>
   </div>
   <div class="col">
-    <div class="list-avatar-page" style=" margin-top:50px;">
+    <div class="list-avatar-page" style="margin-top:62px;margin-left:-60px;">
       <ion-list>
         <ion-item>
           <ion-avatar item-start>
-            <img src="assets/img/1.jpg">
+            <img style="width:60px;height:60px;" src="assets/img/1.jpg">
           </ion-avatar>
-          <p>10223456</p>
-          <h2>ドラ　太郎</h2>
+          <p style="font-size:20px;">10223456</p>
+          <h2 style="font-size:20px;">ドラ　太郎</h2>
         </ion-item>
 
         <ion-item>
           <ion-avatar item-start>
-            <img src="assets/img/2.jpg">
+            <img style="width:60px;height:60px;" src="assets/img/2.jpg">
           </ion-avatar>
-          <p>20973323</p>
-          <h2>野比　大雄</h2>
+          <p style="font-size:20px;">20973323</p>
+          <h2 style="font-size:20px;">野比　大雄</h2>
         </ion-item>
 
         <ion-item>
           <ion-avatar item-start>
-            <img src="assets/img/4.jpg">
+            <img style="width:60px;height:60px;" src="assets/img/4.jpg">
           </ion-avatar>
-           <p>23416678</p>
-           <h2>ドラミ</h2>
+           <p style="font-size:20px;">23416678</p>
+           <h2 style="font-size:20px;">ドラミ</h2>
         </ion-item>
 
         <ion-item>
           <ion-avatar item-start>
-            <img src="assets/img/6.jpg">
+            <img style="width:60px;height:60px;" src="assets/img/6.jpg">
           </ion-avatar>
-          <p>34212346</p>
-          <h2>刚田　武</h2>
+          <p style="font-size:20px;">34212346</p>
+          <h2 style="font-size:20px;">刚田　武</h2>
         </ion-item>
 
       </ion-list>

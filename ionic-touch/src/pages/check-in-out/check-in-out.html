@@ -6,27 +6,29 @@
 
 
 <ion-content padding>
-<div class="row">
+<div class="row" style="margin-top:60px;margin-left:80px;">
   
-  <div class="col">
-    <div class="list-avatar-page">
-<div class="list-avatar-page">
-      <ion-list>
-        <ion-item>
-          <ion-avatar item-start>
-            <img src="assets/img/1.jpg">
-          </ion-avatar>
-          <p>10223456</p>
-          <h2>ドラ　太郎</h2>
-        </ion-item>
+  <div class="col" style="height:100px;">
+    <div style="height:100%;">
+      <div class="list-avatar-page" style="margin-left:20px;height:30%;">
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img style="width:120px;height:120px;" src="assets/img/1.jpg">
+            </ion-avatar>
+            <p style="font-size:50px;">10223456</p>
+            <h2 style="font-size:50px;">ドラ　太郎</h2>
+          </ion-item>
 
-      </ion-list>
+        </ion-list>
 
-    </div>
-     <div class="col col-offset-10">
-        <button ion-button color="primary" style="width:100px;" [navPush]="checkResultPage" round large >出勤</button>&nbsp;&nbsp;&nbsp;&nbsp;
-        <button ion-button color="primary" style="width:100px;" [navPush]="checkResultPage" round large >退勤</button>
-    </div>
+      </div>
+      <br>
+      <br>
+      <div style="margin-top:210px;">
+          <button ion-button color="primary" style="width:40%;height:100%;" [navPush]="checkResultInPage" round large ><label style="font-size:120px;">出勤</label></button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button ion-button color="primary" style="width:40%;height:100%;" [navPush]="checkResultPage" round large ><label style="font-size:120px;">退勤</label></button>
+      </div>
 
     </div>
   </div>

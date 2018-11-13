@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { IdInputPage } from '../pages/id-input/id-input';
 import { CheckInOutPage } from '../pages/check-in-out/check-in-out';
 import { CheckResultPage } from '../pages/check-result/check-result';
+import { CheckResultInPage } from '../pages/check-result-in/check-result-in';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CheckResultPage } from '../pages/check-result/check-result';
     HomePage,
     IdInputPage,
     CheckInOutPage,
-    CheckResultPage
+    CheckResultPage,
+    CheckResultInPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { CheckResultPage } from '../pages/check-result/check-result';
     HomePage,
     IdInputPage,
     CheckInOutPage,
-    CheckResultPage
+    CheckResultPage,
+    CheckResultInPage
   ],
   providers: [
     StatusBar,

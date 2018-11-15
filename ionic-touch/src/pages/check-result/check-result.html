@@ -30,7 +30,7 @@
       <br>
       <br>
       <div style="margin-top:15px;">
-          <button ion-button color="primary" style="width:40%;height:100%;" [navPush]="idInputPage" round large ><label style="font-size:120px;">完了</label></button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button ion-button color="primary" style="width:40%;height:100%;" (click)="goPopToRoot($event)" round large ><label style="font-size:120px;">完了</label></button>&nbsp;&nbsp;&nbsp;&nbsp;
           <button ion-button color="primary" style="width:40%;height:100%;" [navPush]="checkInOutPage" round large ><label style="font-size:120px;">戻る</label></button>
       </div>
 

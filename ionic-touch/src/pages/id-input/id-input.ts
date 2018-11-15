@@ -34,7 +34,19 @@ export class IdInputPage {
 
   ionViewDidLoad() {
     this.ionQrscannLoad();
-    console.log('ionViewDidLoad ScanPage');
+    console.log('ionViewDidLoad IdInputPage');
+  }
+
+  ionViewDidEnter(){
+    this.ionQrscannLoad();
+    console.log('ionViewDidEnter IdInputPage');
+  }
+
+  ionViewDidLeave(){
+    console.log('ionViewDidLeave IdInputPage');
+    this.currentId = "";
+    this.codeReader.reset();
+    console.log('reset');
   }
 
   ionQrscannLoad() {
@@ -69,6 +81,8 @@ export class IdInputPage {
     this.currentId = result;
    
     this.navCtrl.push(CheckInOutPage);
+   
+
 }).catch((err) => {
     console.error(err);
     

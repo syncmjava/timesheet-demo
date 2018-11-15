@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { CheckInOutPage } from '../check-in-out/check-in-out';
+import { NavController } from 'ionic-angular';
+import { CheckInOutPage, } from '../check-in-out/check-in-out';
 import { IdInputPage } from '../id-input/id-input';
 
 @Component({
@@ -9,8 +10,12 @@ import { IdInputPage } from '../id-input/id-input';
 export class CheckResultPage {
   checkInOutPage;
   idInputPage;
-  constructor() {
+  constructor(public navCtrl: NavController) {
     this.checkInOutPage = CheckInOutPage;
     this.idInputPage = IdInputPage;
+  }
+
+  goPopToRoot() {
+     this.navCtrl.popToRoot(); 
   }
 }

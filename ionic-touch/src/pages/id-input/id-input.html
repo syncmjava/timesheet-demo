@@ -12,7 +12,8 @@
           <ion-item style="display:inline-flex; width:60%;margin-top:0px;" >
           <ion-input type="text" placeholder="IDを入力" [(ngModel)]="currentId" style="font-size:50px;display:inline-flex; width:60%;" ></ion-input>
           </ion-item>
-          <img style="width:80px;height:80px;" src="assets/img/qr.jpg">
+          <div style="width:80px;height:80px;"><video id="video" style="border: 1px solid gray; width:80px;height:80px;"></video></div>
+          <!--<img style="width:80px;height:80px;" src="assets/img/qr.jpg">-->
     </div>
     <div class="col col-offset-10">
         <button ion-button color="primary" style="width:120px;height:80px;" (click)="doInput('1')" round large><label style="font-size:40px;">１</label></button>
